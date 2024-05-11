@@ -36,4 +36,18 @@ public class VentaController : Controller
 
         return View(VentasModelLista);
     }
+
+    public IActionResult ResultadosOrdenadosAscendente()
+    {
+        var ventas = _ventasService.ObtenerVentasOrdenadasAscendente();
+        var VentasModelLista = VentaModel.MapearAListaModel(ventas);
+        return View("Resultados", VentasModelLista);
+    }
+
+    public IActionResult ResultadosOrdenadosDescendente()
+    {
+        var ventas = _ventasService.ObtenerVentasOrdenadasDescendente();
+        var VentasModelLista = VentaModel.MapearAListaModel(ventas);
+        return View("Resultados", VentasModelLista);
+    }
 }

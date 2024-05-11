@@ -6,7 +6,10 @@ public interface IVentaService
 {
     void RegistrarVenta(Venta venta);
     List<Venta> ObtenerVentas();
+    List<Venta> ObtenerVentasOrdenadasAscendente();
+    List<Venta> ObtenerVentasOrdenadasDescendente();
 }
+
 
 public class VentaService : IVentaService
 {
@@ -27,5 +30,15 @@ public class VentaService : IVentaService
         return _ventas
             .OrderBy(v => v.IdVenta)
             .ToList();
+    }
+
+    public List<Venta> ObtenerVentasOrdenadasAscendente()
+    {
+        return _ventas.OrderBy(v => v.TotalVenta).ToList();
+    }
+
+    public List<Venta> ObtenerVentasOrdenadasDescendente()
+    {
+        return _ventas.OrderByDescending(v => v.TotalVenta).ToList();
     }
 }
