@@ -1,7 +1,8 @@
-﻿using RegistroDeVentas.Entidades;
+﻿namespace RegistroDeVentas.Models;
+
+using RegistroDeVentas.Entidades;
 using System.ComponentModel.DataAnnotations;
 
-namespace RegistroDeVentas.Models;
 public class VentaModel
 {
     //- Cliente: Hasta 50 caracteres. Campo requerido
@@ -11,12 +12,16 @@ public class VentaModel
     // El precio unitario debe ser mayor o igual a 10 y menor a 1000
 
     public int IdVenta { get; set; }
+
     [StringLength(50), Required]
     public string Cliente { get; set; }
+
     [Range(2, 299), Required]
     public int CantidadVendida { get; set; }
+
     [Range(10, 999), Required]
     public int PrecioUnitario { get; set; }
+
     public int TotalVenta { get; set; }
 
     public VentaModel()

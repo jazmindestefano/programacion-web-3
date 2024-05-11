@@ -11,6 +11,7 @@ public class VentaController : Controller
     {
         _ventasService = ventasService;
     }
+
     public IActionResult RegistrarVenta()
     {
         return View();
@@ -31,7 +32,7 @@ public class VentaController : Controller
     {
         var ventas = _ventasService.ObtenerVentas();
 
-        var VentasModelLista = VentaModel.MapearAListaModel(ventas);
+         var VentasModelLista = VentaModel.MapearAListaModel(ventas);
 
         return View(VentasModelLista);
     }
