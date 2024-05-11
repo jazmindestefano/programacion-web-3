@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jdestefano\\Projects\\RegistroDeVentas\\RegistroDeVentas.csproj": {}
+    "C:\\Users\\jdestefano\\Projects\\UNLAM\\RegistroDeVentas\\RegistroDeVentas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jdestefano\\Projects\\RegistroDeVentas\\RegistroDeVentas.csproj": {
+    "C:\\Users\\jdestefano\\Projects\\UNLAM\\RegistroDeVentas\\RegistroDeVentas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jdestefano\\Projects\\RegistroDeVentas\\RegistroDeVentas.csproj",
+        "projectUniqueName": "C:\\Users\\jdestefano\\Projects\\UNLAM\\RegistroDeVentas\\RegistroDeVentas.csproj",
         "projectName": "RegistroDeVentas",
-        "projectPath": "C:\\Users\\jdestefano\\Projects\\RegistroDeVentas\\RegistroDeVentas.csproj",
+        "projectPath": "C:\\Users\\jdestefano\\Projects\\UNLAM\\RegistroDeVentas\\RegistroDeVentas.csproj",
         "packagesPath": "C:\\Users\\jdestefano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jdestefano\\Projects\\RegistroDeVentas\\obj\\",
+        "outputPath": "C:\\Users\\jdestefano\\Projects\\UNLAM\\RegistroDeVentas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jdestefano\\AppData\\Roaming\\NuGet\\NuGet.Config",
